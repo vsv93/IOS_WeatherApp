@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NAS-uN-nzf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's The Weather?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCq-pV-pNL">
+                                <rect key="frame" x="53" y="20" width="270" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="3dP-ba-IdJ"/>
+                                    <constraint firstAttribute="height" constant="50" id="XYj-gI-2AR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Your City:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncr-Xc-RYd">
+                                <rect key="frame" x="93" y="78" width="189" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="189" id="IYj-YJ-QQD"/>
+                                    <constraint firstAttribute="height" constant="43" id="Jcf-6k-RCi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eg. Bangalore, Chennai" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V81-JO-AGP">
+                                <rect key="frame" x="16" y="129" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="3pV-ur-w07"/>
+                                    <constraint firstAttribute="height" constant="30" id="wyw-h5-G3d"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVd-bK-mni">
+                                <rect key="frame" x="162" y="186" width="52" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="2bS-iX-Jdm"/>
+                                    <constraint firstAttribute="width" constant="52" id="eYE-Uq-maD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getWeather:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P7s-HT-XcI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZO-bo-3hw">
+                                <rect key="frame" x="16" y="247" width="343" height="146"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="146" id="5Bo-XD-mhQ"/>
+                                    <constraint firstAttribute="width" constant="343" id="RDI-op-EeL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yCq-pV-pNL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="6Lg-yy-Kzi"/>
+                            <constraint firstItem="V81-JO-AGP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D3t-mg-58d"/>
+                            <constraint firstItem="V81-JO-AGP" firstAttribute="top" secondItem="ncr-Xc-RYd" secondAttribute="bottom" constant="8" id="IOU-NX-O34"/>
+                            <constraint firstItem="NAS-uN-nzf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IjC-TA-lgo"/>
+                            <constraint firstAttribute="trailing" secondItem="NAS-uN-nzf" secondAttribute="trailing" id="JQn-pr-faN"/>
+                            <constraint firstItem="pVd-bK-mni" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KMO-ws-gOH"/>
+                            <constraint firstItem="pVd-bK-mni" firstAttribute="top" secondItem="V81-JO-AGP" secondAttribute="bottom" constant="27" id="KSy-MF-d8e"/>
+                            <constraint firstItem="oZO-bo-3hw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KV0-XW-wzX"/>
+                            <constraint firstItem="yCq-pV-pNL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tcm-pQ-ry9"/>
+                            <constraint firstItem="oZO-bo-3hw" firstAttribute="top" secondItem="pVd-bK-mni" secondAttribute="bottom" constant="29" id="YXS-tR-kMx"/>
+                            <constraint firstItem="ncr-Xc-RYd" firstAttribute="top" secondItem="yCq-pV-pNL" secondAttribute="bottom" constant="8" id="bo6-Lq-YPT"/>
+                            <constraint firstItem="NAS-uN-nzf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ctS-dz-SAf"/>
+                            <constraint firstItem="ncr-Xc-RYd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zUp-eq-LKd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NAS-uN-nzf" secondAttribute="bottom" id="zn8-JG-tPm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityField" destination="V81-JO-AGP" id="p4t-sD-cLG"/>
+                        <outlet property="resultLabel" destination="oZO-bo-3hw" id="whF-n0-vFw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg.jpg" width="1000" height="666"/>
+    </resources>
+</document>
